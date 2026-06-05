@@ -40,9 +40,10 @@
     // Variable to keep track of the currently clicked polygon
     var currentlyHighlightedLayer = null;
 
-    // Add a basemap (Carto Voyager)
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; OpenStreetMap &copy; CARTO'
+    // Add a basemap (Open Street Map)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
     // Paste your Google Sheets published CSV URL here
